@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
     <sc_cat_item_catalog action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Routing Protocols Configuration (Standard)">8c6db9ab47be01101f7e7ac8f36d4369</sc_cat_item>
+        <sc_cat_item display_value="Routing Protocols Configuration">8c6db9ab47be01101f7e7ac8f36d4369</sc_cat_item>
         <sc_catalog display_value="CMS Master Service Catalog">2e733def477e01101f7e7ac8f36d43d3</sc_catalog>
         <sys_class_name>sc_cat_item_catalog</sys_class_name>
         <sys_created_by>admin</sys_created_by>
