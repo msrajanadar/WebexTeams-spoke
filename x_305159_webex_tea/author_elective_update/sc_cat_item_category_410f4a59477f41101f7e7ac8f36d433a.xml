@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Move/Modify eGain/CCMP Resources">0d0fca19477f41101f7e7ac8f36d43d7</sc_cat_item>
+        <sc_category display_value="CCMP">53ebb895477b41101f7e7ac8f36d43b3</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-30 13:15:46</sys_created_on>
+        <sys_id>410f4a59477f41101f7e7ac8f36d433a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CCMP.Move/Modify eGain/CCMP Resources</sys_name>
+        <sys_package display_value="Webex Teams Spoke" source="x_305159_webex_tea">c74ab589dba01010fc011fc7689619df</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Webex Teams Spoke">c74ab589dba01010fc011fc7689619df</sys_scope>
+        <sys_update_name>sc_cat_item_category_410f4a59477f41101f7e7ac8f36d433a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-30 13:15:46</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Webex Teams Spoke">c74ab589dba01010fc011fc7689619df</application>
+        <file_path/>
+        <instance_id>16ffd6f1db790590a667cac5059619a0</instance_id>
+        <instance_name>dev126050</instance_name>
+        <name>sc_cat_item_category_410f4a59477f41101f7e7ac8f36d433a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Move/Modify eGain/CCMP Resources">0d0fca19477f41101f7e7ac8f36d43d7</sc_cat_item><sc_category display_value="CCMP">53ebb895477b41101f7e7ac8f36d43b3</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-30 13:15:46</sys_created_on><sys_id>410f4a59477f41101f7e7ac8f36d433a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CCMP.Move/Modify eGain/CCMP Resources</sys_name><sys_package display_value="Webex Teams Spoke" source="x_305159_webex_tea">c74ab589dba01010fc011fc7689619df</sys_package><sys_policy/><sys_scope display_value="Webex Teams Spoke">c74ab589dba01010fc011fc7689619df</sys_scope><sys_update_name>sc_cat_item_category_410f4a59477f41101f7e7ac8f36d433a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-30 13:15:46</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1478834503</payload_hash>
+        <record_name>CCMP.Move/Modify eGain/CCMP Resources</record_name>
+        <reverted_from/>
+        <source>53024bce473201101f7e7ac8f36d43a5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-30 13:15:46</sys_created_on>
+        <sys_id>8d0f4a59477f41101f7e7ac8f36d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181151bb7890000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-30 13:15:46</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>c50f4a590f7f4110b362e8b42b58c73c</update_guid>
+        <update_guid_history>c50f4a590f7f4110b362e8b42b58c73c:1478834503</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="CCMP.Move/Modify eGain/CCMP Resources">22425ed9477f41101f7e7ac8f36d434e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-30 13:30:05</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>219763ed317b4e5c91d6e79f43e45910</sys_id>
+        <sys_metadata>410f4a59477f41101f7e7ac8f36d433a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CCMP.Move/Modify eGain/CCMP Resources</sys_name>
+        <sys_package display_value="Webex Teams Spoke" source="x_305159_webex_tea">c74ab589dba01010fc011fc7689619df</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Webex Teams Spoke">c74ab589dba01010fc011fc7689619df</sys_scope>
+        <sys_scope_delete display_value="">4699a016e7ed4ee4b6c360117de5f031</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_410f4a59477f41101f7e7ac8f36d433a</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_410f4a59477f41101f7e7ac8f36d433a">8d0f4a59477f41101f7e7ac8f36d433c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-30 13:30:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
