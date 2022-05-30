@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Report Creation">3cd6de9d477f41101f7e7ac8f36d43ce</sc_cat_item>
+        <sc_category display_value="eGain">f82cfc95477b41101f7e7ac8f36d4363</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-30 13:51:02</sys_created_on>
+        <sys_id>5517dadd477f41101f7e7ac8f36d435c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>eGain.Report Creation</sys_name>
+        <sys_package display_value="Webex Teams Spoke" source="x_305159_webex_tea">c74ab589dba01010fc011fc7689619df</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Webex Teams Spoke">c74ab589dba01010fc011fc7689619df</sys_scope>
+        <sys_update_name>sc_cat_item_category_5517dadd477f41101f7e7ac8f36d435c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-30 13:51:02</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

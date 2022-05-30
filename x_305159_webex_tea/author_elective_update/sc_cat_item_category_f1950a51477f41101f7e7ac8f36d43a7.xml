@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Agent Association with skillset/queues">bb35c651477f41101f7e7ac8f36d4368</sc_cat_item>
+        <sc_category display_value="Contact Center Express">8eab959a4713c1101f7e7ac8f36d4385</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-30 12:34:36</sys_created_on>
+        <sys_id>f1950a51477f41101f7e7ac8f36d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Contact Center Express.Agent Association with skillset/queues</sys_name>
+        <sys_package display_value="Webex Teams Spoke" source="x_305159_webex_tea">c74ab589dba01010fc011fc7689619df</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Webex Teams Spoke">c74ab589dba01010fc011fc7689619df</sys_scope>
+        <sys_update_name>sc_cat_item_category_f1950a51477f41101f7e7ac8f36d43a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-30 12:34:36</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Webex Teams Spoke">c74ab589dba01010fc011fc7689619df</application>
+        <file_path/>
+        <instance_id>16ffd6f1db790590a667cac5059619a0</instance_id>
+        <instance_name>dev126050</instance_name>
+        <name>sc_cat_item_category_f1950a51477f41101f7e7ac8f36d43a7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Agent Association with skillset/queues">bb35c651477f41101f7e7ac8f36d4368</sc_cat_item><sc_category display_value="Contact Center Express">8eab959a4713c1101f7e7ac8f36d4385</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-30 12:34:36</sys_created_on><sys_id>f1950a51477f41101f7e7ac8f36d43a7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Contact Center Express.Agent Association with skillset/queues</sys_name><sys_package display_value="Webex Teams Spoke" source="x_305159_webex_tea">c74ab589dba01010fc011fc7689619df</sys_package><sys_policy/><sys_scope display_value="Webex Teams Spoke">c74ab589dba01010fc011fc7689619df</sys_scope><sys_update_name>sc_cat_item_category_f1950a51477f41101f7e7ac8f36d43a7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-30 12:34:36</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-617998214</payload_hash>
+        <record_name>Contact Center Express.Agent Association with skillset/queues</record_name>
+        <reverted_from/>
+        <source>53024bce473201101f7e7ac8f36d43a5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-30 12:34:36</sys_created_on>
+        <sys_id>3595ca51477f41101f7e7ac8f36d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18114f606140000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-30 12:34:36</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>7d95ca516c7f411030deed9cf4f5ee6e</update_guid>
+        <update_guid_history>7d95ca516c7f411030deed9cf4f5ee6e:-617998214</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Contact Center Express.Agent Association with skillset/queues">14c54e51477f41101f7e7ac8f36d43ef</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-30 12:35:19</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>329ea5e867a645ee88b9f19c3d687e09</sys_id>
+        <sys_metadata>f1950a51477f41101f7e7ac8f36d43a7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Contact Center Express.Agent Association with skillset/queues</sys_name>
+        <sys_package display_value="Webex Teams Spoke" source="x_305159_webex_tea">c74ab589dba01010fc011fc7689619df</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Webex Teams Spoke">c74ab589dba01010fc011fc7689619df</sys_scope>
+        <sys_scope_delete display_value="">4699a016e7ed4ee4b6c360117de5f031</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_f1950a51477f41101f7e7ac8f36d43a7</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_f1950a51477f41101f7e7ac8f36d43a7">3595ca51477f41101f7e7ac8f36d436f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-30 12:35:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
