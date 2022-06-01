@@ -12,11 +12,24 @@
 
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css>
+        <css>body {
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #717171;
+}
+
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+    cursor: pointer;
+}
+
 .wrapper {
   display: table;
   height: 100%;
   width: 100%;
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
 }
 
 .container-fostrap {
@@ -30,11 +43,10 @@
   margin-bottom:15px
 }
 h1.heading {
-  color: #fff;
+  color: inherit;
   font-size: 1.15em;
   font-weight: 900;
   margin: 0 0 0.5em;
-  color: #505050;
 }
 @media (min-width: 450px) {
   h1.heading {
@@ -93,17 +105,23 @@ h1.heading {
   font-size: 1.65em;
 }
 .card-title a {
-  color: #000;
+  color: inherit;
   text-decoration: none !important;
 }
 .card-read-more {
   border-top: 1px solid #D4D4D4;
 }
 .card-read-more a {
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+  font-color: inherit;
   text-decoration: none !important;
   padding:10px;
   font-weight:600;
   text-transform: uppercase
+}
+
+.font-thin {
+  font-weight: 300;
 }
 
 .text {
@@ -120,6 +138,32 @@ h1.heading {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+
+.back {  
+  position: relative;
+  font-weight: bold;
+  font-size: 24px;
+  border: 5px solid gold;
+  padding: 10px 15px;
+  background-color: gold;
+  width: 15vw;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.back::before {
+  content: '';
+  position: absolute;
+  display: block;    
+  width: 0px;        
+  left: 0;
+  top: 50%;
+  border: 29px solid transparent;
+  border-left: 0;
+  border-right: 30px solid gold;
+  transform: translate(calc(-100% - 5px), -50%);
 }
 </css>
         <data_table>sp_instance</data_table>
@@ -150,10 +194,9 @@ h1.heading {
 
     // data.categories = getCategories('2e733def477e01101f7e7ac8f36d43d3');
     data.categories = getCategories(input.catSys_id);
-    console.log('data.categories.length: ' + data.categories.length);
     if(data.categories.length == 0 ) {
-      console.log("input: " + input.catSys_id);
       data.categories = getCategoryItems(input.catSys_id);
+			data.type = "item";
     }
   }
   else {
@@ -195,17 +238,18 @@ h1.heading {
       if (!categoryJS.canView()) continue;
       var c = {};
       var d = {};
-      $sp.getRecordValues(c, gr, "sys_id,title,parent,description,homepage_image");
+      $sp.getRecordValues(c, gr, "sys_id,title,parent,description,homepage_image,short_description");
 
       var dd = getCatCategory(c.parent);
 			var homepage_image = gr.getDisplayValue(c.homepage_image);
-			console.log('image: ' + homepage_image);
+			// console.log('image: ' + homepage_image);
 			
       d = {
         'sc_catalog': dd.sc_catalog,
         'title': dd.title,
         'description': dd.description,
 				'homepage_image': dd.homepage_image,
+				'short_description': dd.short_description,
         'child' : [c]
 
       };
@@ -232,15 +276,16 @@ h1.heading {
         var item = new sn_sc.CatItem(catItem.getUniqueValue() + "");
         if (!item.canView()) continue;
         var c = {};
-        $sp.getRecordValues(c,catItem,"sys_id,name,description");
+        $sp.getRecordValues(c,catItem,"sys_id,name,description,short_description");
         
         var d = {
           'sys_id': c.sys_id,
           'title': c.name,
-          'description': c.description.replace(/<\/?[^>]+(>|$)/g, "")
+          'description': c.description.replace(/<\/?[^>]+(>|$)/g, ""),
+					'short_description': c.short_description
         };
         items.push(d);  
-        console.log(JSON.stringify(d));
+        // console.log("getCategoryItems"+ JSON.stringify(d));
       }
       /*
       while(catItem.next()){
@@ -266,7 +311,7 @@ h1.heading {
   function getCatCategory(categorySysId){
     var categoryRead = new sn_sc.CatCategory(categorySysId);
     categoryRead.setTableName("sc_category");
-    var values = categoryRead.read({"title" : "", "sc_catalog":"", "description": "", "parent": "", "homepage_image": ""}, false);
+    var values = categoryRead.read({"title" : "", "sc_catalog":"", "description": "","short_description": "", "parent": "", "homepage_image": ""}, false);
     // gs.info(categorySysId);
     // gs.info(values.title);
     // gs.info(values.test);
@@ -281,44 +326,59 @@ h1.heading {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-31 12:19:22</sys_created_on>
         <sys_id>d0bb0fa147fb81101f7e7ac8f36d43c8</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>87</sys_mod_count>
         <sys_name>CMS Demo01</sys_name>
         <sys_package display_value="Webex Teams Spoke" source="x_305159_webex_tea">c74ab589dba01010fc011fc7689619df</sys_package>
         <sys_policy/>
         <sys_scope display_value="Webex Teams Spoke">c74ab589dba01010fc011fc7689619df</sys_scope>
         <sys_update_name>sp_widget_d0bb0fa147fb81101f7e7ac8f36d43c8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-05-31 15:42:12</sys_updated_on>
+        <sys_updated_on>2022-06-01 18:31:44</sys_updated_on>
         <template><![CDATA[<section class="wrapper">
   <div class="container-fostrap">
     <div class="content">
       <div class="container">
         <div class="row">
+
+          <div class="col-1 btn" style="float: left; border:1px black;">
+            <a class="" ng-click=catClick(c.data.parent)>
+
+              <i class="icon-arrow-left"></i>
+              <i class="icon-home"></i>
+
+            </a>
+          </div>
+        </div>
+        <div class="row">
+
           <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" ng-repeat="catlog in c.data.categories">
             <div class="card">
               <div ng-if="catlog.homepage_image">
-                <a class="img-card" ng-click=catClick(catlog.sys_id)>
-                  <img  alt="{{::catlog.title}}" ng-src="{{::catlog.homepage_image}}.iix" ng-click=catClick(catlog.sys_id)/>
+                <a class="img-card" ng-click="catClick(catlog.sys_id)">
+                  <img  alt="{{::catlog.title}}" ng-src="{{::catlog.homepage_image}}.iix"  />
                 </a>
-              </div>
-              <div class="card-content">
-                <h4 class="card-title">
-                  <a class="textt" ng-click=catClick(catlog.sys_id)>{{::catlog.title}}</a>
-                </h4>
-                <p class="text">
-                  {{::catlog.description}}
-                </p>
-              </div>
-              <div class="card-read-more">
-                <a  ng-click=catClick(catlog.sys_id) class="btn btn-link btn-block">
-                  View More
-                </a>
-              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title font-thin">
+                <a class="textt" ng-click=catClick(catlog.sys_id) uib-tooltip="{{catlog.short_description}}">{{::catlog.title}}</a>
+              </h4>
+              <p class="font-thin text">
+                {{::catlog.description}}
+              </p>
+            </div>
+            <div class="card-read-more">
+              <a  ng-click=catClick(catlog.sys_id) class="btn btn-link btn-block" ng-if="!c.data.type">
+                View More
+              </a>
+              <a style="border-color:white;" ng-href="/$sp.do?id=sc_cat_item&sys_id={{catlog.sys_id}}" ng-if="c.data.type">
+                Order Now
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </section>
 ]]></template>
