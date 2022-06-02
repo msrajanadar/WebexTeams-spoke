@@ -9,6 +9,13 @@
 		c.data.catSys_id = sys_id;
 		c.server.update();
 	};
+	
+	$scope.itemClick = function (sys_id){
+		var hosturl = 'https://' + window.location.host;
+		window.location.href = hosturl + "/$sp.do?id=sc_cat_item&sys_id=" + sys_id;
+		
+		// $sp.do?id=sc_cat_item&sys_id={{catlog.sys_id}}
+	};
 
 };]]></client_script>
         <controller_as>c</controller_as>
@@ -189,18 +196,19 @@ h1.heading {
   // f9c353e4479701101f7e7ac8f36d4345
 
   // 2e733def477e01101f7e7ac8f36d43d3
-
+	data.categoryitem = false;
   if(input) {
-
+		
     // data.categories = getCategories('2e733def477e01101f7e7ac8f36d43d3');
     data.categories = getCategories(input.catSys_id);
     if(data.categories.length == 0 ) {
       data.categories = getCategoryItems(input.catSys_id);
-			data.type = "item";
+			data.categoryitem = true;
     }
   }
   else {
     data.categories = getCategories();
+		
   }
   console.log(JSON.stringify(data.categories));
   // console.log('op: ' + JSON.stringify(data.categories));
@@ -326,14 +334,14 @@ h1.heading {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-05-31 12:19:22</sys_created_on>
         <sys_id>d0bb0fa147fb81101f7e7ac8f36d43c8</sys_id>
-        <sys_mod_count>87</sys_mod_count>
+        <sys_mod_count>100</sys_mod_count>
         <sys_name>CMS Demo01</sys_name>
         <sys_package display_value="Webex Teams Spoke" source="x_305159_webex_tea">c74ab589dba01010fc011fc7689619df</sys_package>
         <sys_policy/>
         <sys_scope display_value="Webex Teams Spoke">c74ab589dba01010fc011fc7689619df</sys_scope>
         <sys_update_name>sp_widget_d0bb0fa147fb81101f7e7ac8f36d43c8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-01 18:31:44</sys_updated_on>
+        <sys_updated_on>2022-06-02 05:25:22</sys_updated_on>
         <template><![CDATA[<section class="wrapper">
   <div class="container-fostrap">
     <div class="content">
@@ -367,10 +375,13 @@ h1.heading {
               </p>
             </div>
             <div class="card-read-more">
-              <a  ng-click=catClick(catlog.sys_id) class="btn btn-link btn-block" ng-if="!c.data.type">
+              <a  ng-click=catClick(catlog.sys_id) class="btn btn-link btn-block" ng-if="c.data.categoryitem == false">
                 View More
               </a>
-              <a style="border-color:white;" ng-href="/$sp.do?id=sc_cat_item&sys_id={{catlog.sys_id}}" ng-if="c.data.type">
+              <a style="border-color:white;" ng-href="/$sp.do?id=sc_cat_item&sys_id={{catlog.sys_id}}" ng-if="c.data.categoryitem == rajan">
+                Order Now
+              </a>
+              <a ng-click=itemClick(catlog.sys_id) class="btn btn-link btn-block" ng-if="c.data.categoryitem == true">
                 Order Now
               </a>
             </div>
